@@ -47,15 +47,19 @@ d. biopython: `conda install -c bioconda biopython`
 
 ### Step 2: download the trained model ###
 
-(1) Go to the directory of 'model' in the 'ESM-PVP' directory
+(1) Create a directory named 'model' in the 'ESM-PVP' directory
+
+`mkdir model` (for example)
+
+(2) Go to the directory of 'model'
 
 `cd model` (for example)
 
-(2) Download the model
+(3) Download the model
 
 `wget -c https://zenodo.org/records/10438949/files/binary.pth.gz`
 
-(3) Unpack the file
+(4) Unpack the file
 
 `gzip -d binary.pth.gz`
 
@@ -109,7 +113,7 @@ The descriptions for the result files are in the 'result_discription.txt' file o
 
 (1) Preparation
 
-Unpack the 'data.tar.gz' file in the 'retrain' directory.
+Unpack the 'data.tar.gz' file and create a directory named 'model' in the 'retrain' directory.
 
 (2) Run
 
